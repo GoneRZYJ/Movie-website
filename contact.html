@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<!-- link 在head里面 -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
+
+	<!-- 字体 -->
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+	<!-- 在“upcoming movies”前面添加图标 -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+	<img class="nav-log" src="img/icon.png" alt="logo">
+		<ul class="nav-bar">
+
+			<a href="index.html"><li >Home</li></a>
+			<a href="ticket.html"><li >Tickets</li></a>
+			<a href="about.html"><li >About</li></a>
+			<a href="contact.html"><li >Contact</li></a>
+		</ul>
+	</nav>
+
+	<form class="contact-form" action="#" method="POST">
+		<h1 class="center">Contact Us</h1>
+
+		<!-- 文本输入 -->
+		<input type="text" placeholder="Name" >
+		<input type="text" placeholder="Email">
+		<input type="text" placeholder="Phone Number">
+
+		<!-- 拉升选项框 -->
+		<select name="type">
+			<option value="general-questions">General Questions</option>
+			<option value="price">Pricing</option>
+		</select>
+
+		<!-- radio -->
+		<label class="inline" for="gender">Gender</label>
+		<br>
+		<input class="inline" type="radio" name="gender" value="Male">
+
+		<label>Male</label>
+		<br>
+		<input class="inline" type="radio" name="gender" value="Female">  
+
+		<label>Female</label>
+		<br>
+		<input class="inline" type="radio" name="gender" value="Other"> 
+
+		<label>Other</label>
+
+		<!-- 单选框，数据进入数据库，value 值 -->
+
+
+		<!-- paragraph -->
+		<textarea placeholder="Message"></textarea>
+
+		
+	
+		<!-- checkbox -->
+		<label for="consent">I have read terams of conditions</label>
+		<input type="checkbox" name="consent">
+
+		<!-- submission -->
+
+		<input class="btn btn-default" type="submit" value="Submit">
+
+	</form>
+
+	<footer>
+		<ul>
+			<li>Contact</li>
+			<li>About Us</li>
+			<li>Term of Use</li>
+		</ul>
+	</footer>
+	
+</body>
+</html>
